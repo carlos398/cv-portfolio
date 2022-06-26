@@ -225,7 +225,7 @@ main .Portfolio{
     justify-content: center;
 }
 
-.Portafolio__container--content .Portafolio__container .portfolio-item{
+.Portafolio__container .portfolio-item{
     width: 90%;
     max-width: 500px;
     min-width: 200px;
@@ -233,7 +233,9 @@ main .Portfolio{
     margin-bottom:20px;
     padding: 10px;
     display: grid;
+    grid-template-rows:1fr ;
     grid-template-columns: 110px auto 50px;
+    gap: 2em;
     align-items: center;
     justify-content: center;
     background-color: #322742;
@@ -256,6 +258,19 @@ main .Portfolio{
     border-radius: 50%;
 }
 
+.portfolio-item .portfolio-item-text h3{
+    font-size: 1.8rem;
+}
+
+.portfolio-item .portfolio-item-text p{
+    font-size: 1.4rem;
+}
+
+
+.Portafolio__container .portfolio-item .down__arrow{
+    width: 20px;
+    height: 20px;
+}
 
 
 @media (max-width: 908px){
@@ -266,6 +281,14 @@ main .Portfolio{
     main .Home .content .slider .slider-img{
         width: 200px;
         height: 200px;
+    }
+
+    .portfolio-item .portfolio-item-text h3{
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-item .portfolio-item-text p{
+        font-size: 1.2rem;
     }
 }
 
@@ -286,9 +309,41 @@ main .Portfolio{
     main .Home .content .slider .slider-text h2{
         font-size: 3rem;
     }
+
+    .portfolio-item .portfolio-item-text h3{
+        font-size: 1.4rem;
+    }
+    
+    .portfolio-item .portfolio-item-text p{
+        font-size: 1rem;
+    }
 }
 
-@media (max-width: 425px){
+@media (max-width: 675px){
+    .Portafolio__container .portfolio-item{
+        grid-template-columns: auto auto auto;
+    }
+
+    .Portafolio__container .portfolio-item .portfolio-item__img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .Portafolio__container .portfolio-item .down__arrow{
+        width: 20px;
+        height: 20px;
+    }
+
+    .portfolio-item .portfolio-item-text h3{
+        font-size: 1.2rem;
+    }
+
+    .portfolio-item .portfolio-item-text p{
+        display: none;
+    }
+}
+
+@media (max-width: 470px){
 
     main .Home .content .slider {
         grid-template-columns: 25px 1fr 25px;
@@ -309,6 +364,24 @@ main .Portfolio{
     
     main .Home .content .slider .slider-text p{
         font-size: 1.8rem;
+    }
+
+    .Portafolio__container .portfolio-item{
+        grid-template-columns: auto auto auto;
+    }
+
+    .Portafolio__container .portfolio-item .portfolio-item__img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .Portafolio__container .portfolio-item .down__arrow{
+        width: 30px;
+        height: 30px;
+    }
+
+    .portfolio-item .portfolio-item-text h3{
+        display: none;
     }
 }
 
