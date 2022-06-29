@@ -348,13 +348,10 @@ main .About .About__izquierdo{
     padding: 10px 0px;
     display: grid;
     grid-template-rows: auto 1fr;
-    align-items: center;
     overflow: hidden;
     color: #fff;
     background-color: #322742;
     border-radius: 15px;
-    position: relative;
-    overflow-y: auto;
     z-index: 1;
 }
 
@@ -375,22 +372,19 @@ main .About .About__izquierdo{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    position: absolute;
 }
 
 .About__izquierdo .About__izquierdo__info{
     width: 90%;
-    height: 90%;
+    height: 100%;
     margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: flex-start;
+    padding: 0px;
 }
 
 .About__izquierdo__info .About__izquierdo_contact {
     width: 100%;
     height: 100%;
+    margin: 0px;
 }
 
 .About__izquierdo__info .About__izquierdo_contact span{
@@ -403,7 +397,7 @@ main .About .About__izquierdo{
     margin-bottom: 0.5em;
 }
 
-.About__izquierdo__info .About__izquierdo_contact .redes{
+.About__izquierdo  .redes{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -411,7 +405,7 @@ main .About .About__izquierdo{
     margin-top: 70px;
 }
 
-.About__izquierdo__info .About__izquierdo_contact .redes a{
+.About__izquierdo  .redes a{
     font-size: 2.5rem;
     margin-right: 10px;
     margin-left: 5px;
@@ -439,6 +433,8 @@ main .About .About__derecho{
     background-color: #322742;
     border-radius: 15px;
     z-index: 1;
+    text-align: left;
+
 }
 
 .About__derecho h2{
@@ -582,13 +578,42 @@ main .About .About__derecho{
         font-size: 1rem;
     }
 
+    main .About{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+        text-align: center;
+        gap:1em
+    }
+
     main .About .About__izquierdo{
-        width: 150px;
+        width: 100%;
+        height: 100%;
+        padding: 0px  10px;
+        grid-template-columns: auto 1fr 50px;
+        grid-template-rows: 1fr;
+        gap:1em;
     }
 
     .About__izquierdo .About__image{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .About__izquierdo .About__izquierdo__info{
+        padding: 0px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
     }
 
     .About__izquierdo__info .About__izquierdo_contact p{
@@ -596,18 +621,11 @@ main .About .About__derecho{
         font-weight: bold;
         margin-bottom: 0.5em;
     }
-
-    .About__izquierdo__info .About__izquierdo_contact {
-        margin-top: 50px;
-    }
-
-    .About__izquierdo__info .About__izquierdo_contact .redes{
-        margin-top: 100px;
-    }
     
-    .About__izquierdo__info .About__izquierdo_contact .redes a{
-        font-size: 1.6rem;
-        margin-right: 5px;
+    .About__izquierdo .redes{
+        flex-direction: column;
+        padding-right: 10px;
+        margin: 0px;
     }
 
     .About__derecho h2{
@@ -634,8 +652,6 @@ main .About .About__derecho{
         height: 20px;
     }
 
-    
-
     .portfolio-item .portfolio-item-text h3{
         font-size: 1.2rem;
     }
@@ -643,15 +659,6 @@ main .About .About__derecho{
     .portfolio-item .portfolio-item-text p{
         display: none;
     }
-
-    .About__izquierdo__info .About__izquierdo_contact .redes{
-        margin-top: 100px;
-    }
-
-    .About__izquierdo__info .About__izquierdo_contact {
-        margin-top: 50px;
-    }
-
 
     .About__derecho h2{
         font-size: 1.4rem;
@@ -724,26 +731,11 @@ main .About .About__derecho{
         font-size: 0.8rem;
     }
 
-    
-
-    main .About .About__izquierdo{
-        width: 120px;
-    }
-
     .About__izquierdo .About__image{
         width: 100px;
         height: 100px;
-        margin-top: 40px;
     }
 
-    .About__izquierdo__info .About__izquierdo_contact {
-        margin-top: 50px;
-    }
-
-    .About__izquierdo__info .About__izquierdo_contact .redes{
-        margin-top: 100px;
-    }
-    
 
     main .About .About__derecho{
         grid-template-columns: 1fr;
