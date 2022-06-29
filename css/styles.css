@@ -660,6 +660,10 @@ main .About .About__derecho{
         display: none;
     }
 
+    .About__derecho{
+        padding: 50px;
+    }
+
     .About__derecho h2{
         font-size: 1.4rem;
     }
