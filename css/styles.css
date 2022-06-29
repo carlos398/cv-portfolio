@@ -354,6 +354,7 @@ main .About .About__izquierdo{
     background-color: #322742;
     border-radius: 15px;
     position: relative;
+    overflow-y: auto;
     z-index: 1;
 }
 
@@ -407,7 +408,7 @@ main .About .About__izquierdo{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 90%;
+    margin-top: 70px;
 }
 
 .About__izquierdo__info .About__izquierdo_contact .redes a{
@@ -595,6 +596,14 @@ main .About .About__derecho{
         font-weight: bold;
         margin-bottom: 0.5em;
     }
+
+    .About__izquierdo__info .About__izquierdo_contact {
+        margin-top: 50px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact .redes{
+        margin-top: 100px;
+    }
     
     .About__izquierdo__info .About__izquierdo_contact .redes a{
         font-size: 1.6rem;
@@ -625,6 +634,8 @@ main .About .About__derecho{
         height: 20px;
     }
 
+    
+
     .portfolio-item .portfolio-item-text h3{
         font-size: 1.2rem;
     }
@@ -632,6 +643,15 @@ main .About .About__derecho{
     .portfolio-item .portfolio-item-text p{
         display: none;
     }
+
+    .About__izquierdo__info .About__izquierdo_contact .redes{
+        margin-top: 100px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact {
+        margin-top: 50px;
+    }
+
 
     .About__derecho h2{
         font-size: 1.4rem;
@@ -704,13 +724,29 @@ main .About .About__derecho{
         font-size: 0.8rem;
     }
 
+    
+
     main .About .About__izquierdo{
         width: 120px;
     }
 
     .About__izquierdo .About__image{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact {
+        margin-top: 50px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact .redes{
+        margin-top: 100px;
+    }
+    
+
+    main .About .About__derecho{
+        grid-template-columns: 1fr;
     }
 
     .About__izquierdo__info .About__izquierdo_contact p{
@@ -722,9 +758,7 @@ main .About .About__derecho{
         margin-right: 3px;
     }
 
-    main .About .About__derecho{
-        grid-template-columns: 1fr;
-    }
+    
 
 
 }
