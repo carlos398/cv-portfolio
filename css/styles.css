@@ -5,6 +5,7 @@
 }
 
 span{ color: #f38295; text-shadow: 3px 3px 12px #ff9aab; }
+a{ text-decoration: none; color: #fff;}
 
 html{
     font-size: 62.5%;
@@ -311,6 +312,210 @@ main .Portfolio{
     right: 10px;
     text-transform: uppercase;
     font-size: 1rem;
+}
+
+/* ABOUT */
+
+main .About{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    color: #322742;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main .About::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #636363;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+main .About .About__izquierdo{
+    width: 300px;
+    height: 100%;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    background-color: #322742;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.About__izquierdo .About__image{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: #636363;
+    border: #f38295 solid 4px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 12px #ff9aab;
+    overflow: hidden;
+    position: relative;
+}
+
+.About__izquierdo .About__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.About__izquierdo .About__izquierdo__info{
+    width: 100%;
+    height: 90%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.About__izquierdo__info .About__izquierdo_contact {
+    width: 100%;
+    height: 100%;
+}
+
+.About__izquierdo__info .About__izquierdo_contact span{
+    display: block;
+}
+
+.About__izquierdo__info .About__izquierdo_contact p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.About__izquierdo__info .About__izquierdo_contact .redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8em;
+}
+
+.About__izquierdo__info .About__izquierdo_contact .redes a{
+    font-size: 2.5rem;
+    margin-right: 10px;
+    margin-left: 5px;
+    color: #f38295;
+
+}
+
+.About__izquierdo_contact .redes a:hover{
+    color: #fff;
+    text-shadow: 3px 3px 13px #ff9aab;
+    transform: scale(1.2);
+}
+
+main .About .About__derecho{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    background-color: #322742;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.About__derecho h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+    text-align: left;
+    color: #ff9aab;
+}
+
+.About__derecho p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: left;
+    color: #fff;
+}
+
+.About__derecho .About_derecho__uno{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.About_derecho__uno .Aboutme{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.About__derecho .Tecnologies{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.Tecnologies span{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 0.2em;
+    text-align: left;
+    text-shadow: none;
+    color: #ff9aab;
+}
+
+.Tecnologies p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.About__derecho .About_derecho__dos{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
 }
 
 
