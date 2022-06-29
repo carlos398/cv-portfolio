@@ -596,11 +596,6 @@ main .About .About__derecho{
         margin-bottom: 0.5em;
     }
     
-    .About__izquierdo__info .About__izquierdo_contact .redes{
-        margin-top: 15em;
-        margin-left: 0px;
-    }
-    
     .About__izquierdo__info .About__izquierdo_contact .redes a{
         font-size: 1.6rem;
         margin-right: 5px;
@@ -720,10 +715,6 @@ main .About .About__derecho{
 
     .About__izquierdo__info .About__izquierdo_contact p{
         font-size: 0.8rem;
-    }
-
-    .About__izquierdo__info .About__izquierdo_contact .redes {
-        margin-top: 200px;
     }
 
     .About__izquierdo__info .About__izquierdo_contact .redes a{
