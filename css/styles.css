@@ -407,7 +407,7 @@ main .About .About__izquierdo{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 8em;
+    margin-top: 90%;
 }
 
 .About__izquierdo__info .About__izquierdo_contact .redes a{
