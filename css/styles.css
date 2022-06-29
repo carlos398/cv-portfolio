@@ -343,7 +343,7 @@ main .About::before{
 }
 
 main .About .About__izquierdo{
-    width: 300px;
+    width: 250px;
     height: 100%;
     padding: 10px 0px;
     display: grid;
@@ -378,7 +378,7 @@ main .About .About__izquierdo{
 }
 
 .About__izquierdo .About__izquierdo__info{
-    width: 100%;
+    width: 90%;
     height: 90%;
     margin-left: 10px;
     display: flex;
@@ -433,7 +433,7 @@ main .About .About__derecho{
     gap: 2em;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
     color: #fff;
     background-color: #322742;
     border-radius: 15px;
@@ -464,7 +464,7 @@ main .About .About__derecho{
     grid-template-rows: 1fr 1fr;
     gap: 2em;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: #fff;
 }
 
@@ -496,7 +496,6 @@ main .About .About__derecho{
 }
 
 .Tecnologies p{
-    font-size: 1.2rem;
     font-weight: bold;
     text-align: left;
     color: #fff;
@@ -515,7 +514,25 @@ main .About .About__derecho{
     grid-template-rows: 1fr 1fr;
     gap: 2em;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.About_derecho__dos .Experience{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.About_derecho__dos .Courses{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
 }
 
 
@@ -563,6 +580,39 @@ main .About .About__derecho{
     .portfolio-item .portfolio-item-text p{
         font-size: 1rem;
     }
+
+    main .About .About__izquierdo{
+        width: 150px;
+    }
+
+    .About__izquierdo .About__image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact p{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    
+    .About__izquierdo__info .About__izquierdo_contact .redes{
+        margin-top: 15em;
+        margin-left: 0px;
+    }
+    
+    .About__izquierdo__info .About__izquierdo_contact .redes a{
+        font-size: 1.6rem;
+        margin-right: 5px;
+    }
+
+    .About__derecho h2{
+        font-size: 2rem;
+    }
+    
+    .About__derecho p{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 675px){
@@ -587,6 +637,27 @@ main .About .About__derecho{
     .portfolio-item .portfolio-item-text p{
         display: none;
     }
+
+    .About__derecho h2{
+        font-size: 1.6rem;
+    }
+    
+    .About__derecho p{
+        font-size: 0.8rem;
+    }
+
+    .About__derecho h2{
+        font-size: 1.6rem;
+    }
+
+    .About__derecho h3{
+        font-size: 1rem;
+    }
+    
+    .About__derecho p{
+        font-size: 0.8rem;
+    }
+
 }
 
 @media (max-width: 470px){
@@ -632,6 +703,28 @@ main .About .About__derecho{
 
     .Portafolio__container .portfolio-item .portafolio-item-type{
         font-size: 0.8rem;
+    }
+
+    main .About .About__izquierdo{
+        width: 120px;
+    }
+
+    .About__izquierdo .About__image{
+        width: 80px;
+        height: 80px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact p{
+        font-size: 0.8rem;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact .redes {
+        margin-top: 200px;
+    }
+
+    .About__izquierdo__info .About__izquierdo_contact .redes a{
+        font-size: 1.5rem;
+        margin-right: 3px;
     }
 }
 
