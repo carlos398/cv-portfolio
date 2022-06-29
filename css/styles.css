@@ -639,23 +639,27 @@ main .About .About__derecho{
     }
 
     .About__derecho h2{
+        font-size: 1.4rem;
+    }
+
+    .About__derecho span{
         font-size: 1.6rem;
     }
-    
-    .About__derecho p{
+
+    .About__derecho .Experience span{
         font-size: 0.8rem;
     }
 
-    .About__derecho h2{
-        font-size: 1.6rem;
-    }
-
-    .About__derecho h3{
+    .About__derecho .Courses span{
         font-size: 1rem;
     }
     
     .About__derecho p{
         font-size: 0.8rem;
+    }
+
+    .About__derecho h3{
+        font-size: 1rem;
     }
 
 }
@@ -726,5 +730,11 @@ main .About .About__derecho{
         font-size: 1.5rem;
         margin-right: 3px;
     }
+
+    main .About .About__derecho{
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
